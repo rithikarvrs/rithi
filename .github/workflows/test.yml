@@ -1,0 +1,14 @@
+name: rithuuu
+on: push
+jobs: 
+  first:
+    runs-on: ubuntu-latest
+    steps:
+      - name: printing jobs
+        run: echo "complete maths"
+
+  build:
+    runs-on: ubuntu-latest
+    needs: first
+    steps: 
+      - run: echo "connected" 
