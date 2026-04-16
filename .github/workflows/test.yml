@@ -12,3 +12,9 @@ jobs:
     needs: first
     steps: 
       - run: echo "connected" 
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - run: echo "next connection"
